@@ -4,6 +4,24 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SideBySide</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Title>SideBySide</Title>
+    <Authors>MichalMarsalek</Authors>
+    <Product>SideBySide</Product>
+    <Description>Side by side - a text format for pairs of multiline data.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MichalMarsalek/CHT</RepositoryUrl>
+    <PackageTags>Tree,Serialization,Unit tests</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
