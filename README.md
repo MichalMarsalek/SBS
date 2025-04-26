@@ -43,4 +43,4 @@ function mul(a: number, b: number): number {  //  function mul(a, b) {
 
 Note that the `//` on the first line is considered a comment not a separator, because it does not follow a space. Extra spaces at the end of the left item of the pair and at the start of the right item of the pair are ignored (up to the amount that is extra on each line - meaning in the example above, the indetation of the `return` line is preserved in the right item).
 
-The separator is detected automatically to be the string that appears the most times exactly once on a line. The separator may appear more than once on the line and the split location is determined by alignment with other lines.
+The separator is the content of the very first line, if it contains a valid separator, otherwise it is detected automatically to be the string that appears the most times exactly once on a line. The separator may appear more than once on the line and the split location is determined by alignment with other lines.
