@@ -1,0 +1,43 @@
+{
+  "name": "@michalmarsalek/side-by-side",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "side by side",
+    "unit tests",
+    "data driven testing",
+    "multiline strings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalMarsalek/SBS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MichalMarsalek/SBS/issues"
+  },
+  "author": "Michal Maršálek",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  }
+}
